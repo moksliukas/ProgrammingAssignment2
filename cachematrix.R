@@ -34,27 +34,3 @@ cacheSolve <- function(x, ...) {
   x$setinv(inv)
   inv
 }
-
-## Testing functions
-
-## Not square matrix
-B = matrix( 
-     c(2, 4, 3, 11,5,6), 
-     nrow=2, 
-     ncol=3)
-
-a<-makeCacheMatrix(B)
-
-## Square matrix
-B = matrix( 
-  c(2, 4, 3, 11, 2, 4, 3, 11,5), 
-  nrow=3, 
-  ncol=3)
-
-a<-makeCacheMatrix(B)
-
-cacheSolve(a)
-cacheSolve(a)
-cacheSolve(a)
-
-#
